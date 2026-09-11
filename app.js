@@ -8,6 +8,6 @@ function calcularTotal(itens) {
         total += itens[i].preco
     }
 
-    
+    // devolve o total calculado
     return total
 }
