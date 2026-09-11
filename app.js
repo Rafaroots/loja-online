@@ -1,16 +1,13 @@
-app.js
-
-
 function calcularTotal(itens) {
+    if (!Array.isArray(itens)) return 0
+
     let total = 0
 
-    for (let i = 0; i < itens.length; i++){
+    // soma os preços de todos os itens do carrinho
+    for (let i = 0; i < itens.length; i++) {
         total += itens[i].preco
     }
 
-    // aplica desconto de fidelidade
-    //antes de retornar o valor final
-
-         return total
- }
- 
+    
+    return total
+}
